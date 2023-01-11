@@ -1,7 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { combineReducers, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-import { composeWithDevTools } from 'redux-devtools-extension'
+import { combineReducers } from 'redux'
 import {
     productListReducer, productDetailsReducer, productDeleteReducer,
     productCreateReducer, productUpdateReducer, productReviewCreateReducer, productTopRatedReducer,
@@ -58,8 +56,6 @@ const initialState = {
     userLogin: { userInfo: userInfoFromStorage },
 }
 
-
-const middleware = [thunk]
 
 const store = configureStore(
     { reducer: reducers, preloadedState: initialState }

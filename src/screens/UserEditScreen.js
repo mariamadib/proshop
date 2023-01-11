@@ -38,6 +38,7 @@ const UserEditScreen = () => {
                 setIsAdmin(user.isAdmin)
             }
         }
+        // eslint-disable-next-line
     }, [dispatch, userId, user, successUpdate])
 
     const submitHandler = (e) => {
