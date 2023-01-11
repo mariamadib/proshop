@@ -1,7 +1,7 @@
 //import React, { useState} from 'react'
 import React, { useEffect } from 'react'
 import Product from '../components/Product'
-import { Row, Col, Pagination } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 //import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { listProducts } from '../actions/productActions'

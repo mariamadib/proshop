@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, FormControl } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 const SearchBox = () => {
